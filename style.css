@@ -1,0 +1,38 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 800px;
+}
+
+.btns {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.btn {
+  padding: 12px 50px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #ffffff;
+  background-color: #2575fc;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(37, 117, 252, 0.3);
+  cursor: pointer;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #1a5bdf;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(37, 117, 252, 0.5);
+}
+
+.btn:active {
+  transform: translateY(1px);
+  box-shadow: 0 3px 10px rgba(37, 117, 252, 0.3);
+}
