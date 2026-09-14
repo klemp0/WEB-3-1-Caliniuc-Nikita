@@ -28,6 +28,77 @@ main{
     padding: 20px;
 }
 
-.moldova{
+.tara{
     margin: 0px 500px;
+}
+
+.moldova-flag{
+    border-collapse: collapse;
+    margin: 15px;
+}
+
+.moldova-flag td {
+    width: 50px;
+    height: 30px;
+    padding: 0;
+}
+
+.mold-blue {
+    background-color: rgb(36, 36, 161);
+}
+
+.mold-yelow {
+    background-color: rgb(255, 208, 0);
+}
+
+.mold-rosu {
+    background-color: rgb(196, 18, 18);
+}
+
+.norway-flag{
+    border-collapse: collapse;
+    margin: 15px;
+}
+
+.norway-flag td {
+    width: 30px;
+    height: 20px;
+    padding: 0;
+}
+
+.nor-red{
+    background-color: rgb(202, 47, 47);
+}
+
+.nor-white{
+    background-color: white;
+}
+
+.nor-blue{
+    background-color: rgb(1, 1, 49);
+}
+
+.sweden-flag{
+    border-collapse: collapse;
+    margin: 15px;
+}
+
+.sweden-flag td {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+}
+
+.sued-blue{
+    background-color: rgb(51, 51, 187);
+}
+
+.sued-yellow{
+    background-color: rgb(235, 201, 10);
+}
+
+footer{
+    padding: 20px;
+    text-align: center;
+    background-color: bisque;
 }
