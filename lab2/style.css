@@ -61,8 +61,8 @@ main{
 }
 
 .norway-flag td {
-    width: 30px;
-    height: 20px;
+    width: 20px;
+    height: 15px;
     padding: 0;
 }
 
@@ -84,8 +84,8 @@ main{
 }
 
 .sweden-flag td {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     padding: 0;
 }
 
