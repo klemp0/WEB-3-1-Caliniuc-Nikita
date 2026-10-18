@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Catalog studenți</title>
+</head>
+<body>
+    <main>
+    <section>
+    <form id="formStudent">
+        <label>Nume
+            <input type="text" id="nume">
+        </label>
+        <label>Grupa
+            <input type="text" id="grupa">
+        </label>
+        <label>Varsta
+            <input type="text" id="varsta">
+        </label>
+        <label>Specialitate
+            <input type="text" id="specialitate">
+        </label>
+
+        <label>Avatar
+          <select id="avatar">
+            <option value="">-- alege avatarul --</option>
+            <option value="👩‍💻">👩‍💻 Programatoare</option>
+            <option value="👨‍💻">👨‍💻 Programator</option>
+            <option value="👩‍🎓">👩‍🎓 Studentă</option>
+            <option value="👨‍🎓">👨‍🎓 Student</option>
+            <option value="🧑‍🔬">🧑‍🔬 Cercetător</option>
+          </select>
+        </label>
+
+        <button type="submit">Adauga</button>
+    </form>
+    <p id="eroare"></p>
+    </section>
+
+    <section id="lista"></section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
