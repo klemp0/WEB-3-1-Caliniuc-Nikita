@@ -28,9 +28,9 @@
             <option value="">-- alege avatarul --</option>
             <option value="👩‍💻">👩‍💻 Programatoare</option>
             <option value="👨‍💻">👨‍💻 Programator</option>
-            <option value="👩‍🎓">👩‍🎓 Studentă</option>
+            <option value="👩‍🎓">👩‍🎓 Student</option>
             <option value="👨‍🎓">👨‍🎓 Student</option>
-            <option value="🧑‍🔬">🧑‍🔬 Cercetător</option>
+            <option value="🧑‍🔬">🧑‍🔬 Cercetator</option>
           </select>
         </label>
 
@@ -39,6 +39,37 @@
     <p id="eroare"></p>
     </section>
 
+    <div class="grup">
+        <span>justify-content:</span>
+        <button onclick="schimbaJustify('flex-start')">flex-start</button>
+        <button onclick="schimbaJustify('center')">center</button>
+        <button onclick="schimbaJustify('flex-end')">flex-end</button>
+        <button onclick="schimbaJustify('space-between')">space-between</button>
+        <button onclick="schimbaJustify('space-around')">space-around</button>
+        <button onclick="schimbaJustify('space-evenly')">space-evenly</button>
+    </div>
+
+    <div class="grup">
+        <span>align-items:</span>
+        <button onclick="schimbaAlign('stretch')">stretch</button>
+        <button onclick="schimbaAlign('flex-start')">flex-start</button>
+        <button onclick="schimbaAlign('center')">center</button>
+        <button onclick="schimbaAlign('flex-end')">flex-end</button>
+        <button onclick="schimbaAlign('baseline')">baseline</button>
+    </div>
+
+    <div class="grup">
+        <span>flex-wrap:</span>
+        <button onclick="schimbaWrap('wrap')">wrap</button>
+        <button onclick="schimbaWrap('nowrap')">nowrap</button>
+    </div>
+   <div class="grup">
+       <span>gap:</span>
+       <input type="range" id="gap" min="0" max="80" value="16">
+       <strong id="valoareGap">16px</strong>
+   </div>
+
+    <p>Numar de Studenti: <span id="contor"></span></p>
     <section id="lista"></section>
     </main>
     <script src="script.js"></script>
