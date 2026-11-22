@@ -32,6 +32,12 @@ function afiseaza(){
       </div>`;
   });
   lista.innerHTML = html;
+  let butoane = document.querySelectorAll("button[data-id]");
+  butoane.forEach(function (btn){
+    btn.addEventListener("click", function(){
+      stergeElev(Number(btn.dataset.id));
+    });
+  });
 }
 afiseaza();
 
@@ -41,6 +47,26 @@ formular.addEventListener("submit", function (event){
   let varsta = document.getElementById("varsta").value;
   let grupa = document.getElementById("grupa").value.trim();
   let email = document.getElementById("email").value.trim();
+
+  if(nume === "" || grupa === "" || varsta === "" || email === ""){
+    eroare.textContent = "Completati toate campurile";
+    eroare.classList.remove("d-none");
+    return;
+  }
+
+    if(!(Number(varsta)>0)){
+    eroare.textContent = "Corectati varsta";
+    eroare.classList.remove("d-none");
+    return;
+  }
+
+  let formatEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if(!formatEmail.test(email)){
+    eroare.textContent = "E-mailul nu are format valid";
+    eroare.classList.remove("d-none");
+    return;
+  }
+  eroare.classList.add("d-none");
 
   let elev = {
     id: Date.now(),
@@ -55,6 +81,22 @@ formular.addEventListener("submit", function (event){
   afiseaza();
 });
 
-lista.addEventListener("click", function(event){
-  
-})
+function stergeElev(id){
+  elevi = elevi.filter(function (e){
+    return e.id !== id;
+  });
+  salveaza();
+  afiseaza();
+}
+
+let all = document.getElementById("all");
+all.addEventListener("click", function(){
+  if(elevi.length === 0){
+    return;
+  }
+  if(confirm("Sunteti siguri ca vreti sa stergeti toti elevii?")){
+    elevi = [];
+    salveaza();
+    afiseaza();
+  }
+});
